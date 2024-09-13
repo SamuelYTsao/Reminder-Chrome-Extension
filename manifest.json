@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Color Reminder",
+  "description": "Color codes your reminders!",
+  "version": "1.0",
+
+  "permissions": ["alarms", "storage", "notifications"],
+  "background": {
+    "service_worker": "ColorReminderBackground.js"
+  },
+
+  "action": {
+    "default_popup": "ColorReminder.html",
+    "default_icon": {
+      "48": "images/icon48.png"
+    }
+  }
+}
