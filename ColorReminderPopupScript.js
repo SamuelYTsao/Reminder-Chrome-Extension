@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //reinserting HTML elements to DOM
   for (let i = 0; i < reminderArray.length; i++) {
     const addedElementData = reminderArray[i]; //this is an object includes the .values and the HTML
-    createButton.insertAdjacentHTML("beforebegin", addedElementData.html); //ok so this inserts the HTML but not the content that was stored
+    createButton.insertAdjacentHTML("beforebegin", addedElementData.html); // this inserts the HTML but not the content that was stored
   }
   //reinserting input data to DOM
   const reminderList = document.getElementsByClassName("reminder");
@@ -46,12 +46,14 @@ createButton.addEventListener("click", () => {
   input.setAttribute("type", "text");
   input.setAttribute("id", "reminder");
   input.classList.add("reminder");
+  input.classList.add("input-styling");
 
   //create a timer to go with it
   var inputTime = document.createElement("input");
   inputTime.setAttribute("type", "time");
   inputTime.setAttribute("id", "time");
   inputTime.classList.add("time");
+  inputTime.classList.add("time-styling");
 
   //create a save button to go with this
 
@@ -59,6 +61,7 @@ createButton.addEventListener("click", () => {
   saveButton.innerHTML = "Save";
   saveButton.setAttribute("id", "save");
   saveButton.classList.add("saveButton");
+  saveButton.classList.add("button-styling");
 
   //create a delete button to go with this use the same code as the save button
   var deleteButton = document.createElement("button");
@@ -66,6 +69,7 @@ createButton.addEventListener("click", () => {
 
   deleteButton.setAttribute("id", "delete");
   deleteButton.classList.add("deleteButton");
+  deleteButton.classList.add("button-styling");
 
   //wrap above items in a div
 
