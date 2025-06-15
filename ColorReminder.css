@@ -5,11 +5,42 @@ body {
 h1 {
   text-align: center;
   font-family: sans-serif;
+  text-transform: uppercase;
 }
+
+.button-styling {
+  color: white;
+  background-color: #A3E3F7;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px #A3E3F7;
+  border-radius: 25px 25px 25px 25px;
+  cursor: pointer;
+  display: inline;
+}
+
+.input-styling {
+    background-color: #eee;
+    border-radius: 25px 25px 25px 25px;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 90%;
+}
+
+.time-styling {
+  background-color: #eee;
+  border-radius: 25px 25px 25px 25px;
+}
+
+
+
 img {
   width: 70px;
   display: block;
   margin-left: 165px;
   margin-right: 165px;
   justify-content: center;
+  align-items: center;
 }
+
